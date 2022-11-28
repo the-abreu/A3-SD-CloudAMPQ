@@ -30,6 +30,9 @@ Ao executar corretamente o arquivo da Matriz (Publisher.py) e da filial (Subscri
   <summary>
     <b>Matriz</b>
   </summary>
+  
+![matrizII](https://user-images.githubusercontent.com/96211934/204382443-e6b84a25-f5fe-4629-836f-5b801c0162b3.png)
+
 
 - Funcionalidade: A partir do código de N° 1 você poderá enviar um lote de mensagens as filiais
 
@@ -44,6 +47,8 @@ Ao executar corretamente o arquivo da Matriz (Publisher.py) e da filial (Subscri
   <summary>
     <b>Filial</b>
   </summary>
+
+![filial](https://user-images.githubusercontent.com/96211934/204382054-085b877d-daad-4835-b66b-dc367fdfae58.png)
 
 - Funcionalidade: Este Script que se refere a filial pode apenas "escutar" as mensagens do canal, logo, é a partir dele que você poderá fazer a leitura dos dados recebidos.
 </details>
