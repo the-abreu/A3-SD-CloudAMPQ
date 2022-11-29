@@ -9,12 +9,11 @@ channel = connection.channel()
 channel.queue_declare(queue='hello')
 
 messages = [
-   "PRIMEIRA MENSAGEM: [LEMBRETE] CORES DE ROUPAS QUE NAO PODEM SER LAVADAS JUNTAS",
-   "SEGUNDA MENSAGEM: ROUPAS AZUIS...",
-   "TERCEIRA MENSAGEM: ROUPAS VERDES...",
-   "QUARTA MENSAGEM: ROUPAS AMARELAS...",
-   "QUINTA MENSAGEM: ROUPAS BRANCAS...",
-
+   "PRIMEIRA MENSAGEM: [AVISO] A PARTIR DE 2023 TEREMOS REAJUSTE NO VALOR DA LAVAGEM DAS SEGUINTES ROUPAS:",
+   "SEGUNDA MENSAGEM: CAMISAS A PARTIR DE R$ 19,99 (REAJUSTE)",
+   "TERCEIRA MENSAGEM: BERMUDAS A PARTIR DE R$ 14,99 (REAJUSTE)",
+   "QUARTA MENSAGEM: VESTIDOS A PARTIR DE R$ 29,99 (REAJUSTE)",
+   "QUINTA MENSAGEM: SAIAS A PARTIR DE R$ 24,99 (REAJUSTE)"
 ]
 
 def subMenu():
@@ -22,14 +21,14 @@ def subMenu():
 
    while (mensagem != 3):
 
-      print('\nOPCAO SELECIONADA: [1]')
-
       if mensagem == 1:
+
+         print('\nOPCAO SELECIONADA: [1]')
 
          for message in messages:
             channel.basic_publish(
                exchange='',
-               routing_key='hello',
+               routing_key='sistemas_distribuidos',
                body=message
             )
 
@@ -46,7 +45,7 @@ def subMenu():
          
          newMessage = input('\nINFORME QUAL MENSAGEM DESEJA ENVIAR AS FILIAIS: ')
 
-         channel.basic_publish(exchange='', routing_key='hello', body=newMessage)
+         channel.basic_publish(exchange='', routing_key='sistemas_distribuidos', body=newMessage)
 
          print('\nRETORNANDO AO MENU PRINCIPAL...\n')
 

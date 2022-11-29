@@ -8,9 +8,9 @@ connection = pika.BlockingConnection(
 )
 
 channel = connection.channel()
-channel.queue_declare(queue='hello')
+channel.queue_declare(queue='sistemas_distribuidos')
 channel.basic_consume(
-   queue='hello',
+   queue='sistemas_distribuidos',
    auto_ack=True,
    on_message_callback=callback
 )
