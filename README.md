@@ -52,3 +52,10 @@ Ao executar corretamente o arquivo da Matriz (Publisher.py) e da filial (Subscri
 
 - Funcionalidade: Este Script que se refere a filial pode apenas "escutar" as mensagens do canal, logo, é a partir dele que você poderá fazer a leitura dos dados recebidos.
 </details>
+
+## Acompanhando os dados pelo RabbitMQ
+Ao acessar em seu navegador o localhost na porta 15672 você irá acessar a página WEB do RabbitMQ e poderá acompanhar os gráficos e as especifidades do programa, como a fila em que as mensagens estão passando, para acessar é necessário utilizar as credenciais de acesso, que tanto por padrão é "guest" para o Login e para a senha.
+
+![Rabbit](https://user-images.githubusercontent.com/96211934/204632912-21062ac7-d7f8-4d49-b2dd-ab58c24f15d1.png)
+
+
