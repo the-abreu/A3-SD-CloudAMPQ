@@ -77,15 +77,4 @@ def menuPrincipal():
 
 menuPrincipal()
 
-'''
-   for message in messages:
-      channel.basic_publish(
-         exchange='',
-         routing_key='hello',
-         body=message
-      )
-
-      print(" [x] Enviada '" + message + "'")
-      time.sleep(1)
-'''
 connection.close()
