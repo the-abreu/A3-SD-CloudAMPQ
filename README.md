@@ -11,6 +11,13 @@ Este projeto possui o propósito de realizar um sistema em que tenhamos uma matr
 * Possuir instalado em sua máquina uma IDE, como o VsCode ou PyCharm (Onde você pode abrir os arquivos e ler o código);
 * Possuir instalado em sua máquina o Erlang (é a linguagem de programação utilizada pelo RabbitMQ);
 * Possuir instalado em sua máquina o RabbitMQ (Você pode começar a instalação pelo RabbitMQ, mas ele vai lhe informar a necessidade do Erlang e o redirecionar para baixar o instalador da linguagem);
+* Possuir instalado a biblioteca Pika:
+
+COMANDO PARA INSTALAR NO TERMINAL:
+```
+pip install pika
+```
+
 * Clonar este repositório em sua máquina:
 
 HTTPS:
